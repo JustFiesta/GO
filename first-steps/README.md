@@ -2,13 +2,17 @@
 
 This folder contains initial excercises to get familiar with go syntax and workflow.
 
+<hr>
+
 ## Notes
 
-Initilize new project:
+Create go workspace (module):
 
 ```go
-go mod init someName
+go mod init someModuleName
 ```
+
+-> also to even make/use go files in certain folder we need to specify this module name as shown above 
 
 Run .go file:
 
@@ -37,6 +41,8 @@ go install
 ```
 
 -> this installs app binary in GOPATH/bin
+
+<hr>
 
 ### Useful links
 
