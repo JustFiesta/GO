@@ -9,7 +9,5 @@ import (
 func main()  {
 	fmt.Printf("Hello World!\n")
 
-	p := puppy.Bark()
-
-	print(p)
+	puppy.From12()
 }
