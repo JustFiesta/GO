@@ -12,7 +12,7 @@ Create go workspace (module):
 go mod init someModuleName
 ```
 
--> also to even make/use go files in certain folder we need to specify this module name as shown above 
+-> also to even make/use go files in certain folder we need to specify this module name as shown above
 
 Run .go file:
 
