@@ -69,6 +69,8 @@ func main() {
 	// 	sum += value
 	// }
 
+	fmt.Printf("=====================\n")
+
 	var i int
 	for i < 100 {
 		fmt.Printf("for - Num of iterations: %v\n", i+1)
@@ -86,8 +88,9 @@ func main() {
 		i++
 	}
 
-	i = 0
+	fmt.Printf("=====================\n")
 
+	i = 0
 	for i < 42 {
 		fmt.Printf("for switch - Num of iterations: %v\n", i+1)
 
@@ -109,6 +112,8 @@ func main() {
 		i++
 	} 
 
+	fmt.Printf("=====================\n")
+
 	i = 0
 	// infinite loop
 	for {
@@ -119,4 +124,82 @@ func main() {
 		}
 		i++
 	}
+
+	fmt.Printf("=====================\n")
+
+	// print all odd numbers
+	fmt.Printf("Odd nums to 100\n")
+	for i := 1; i <= 100; i++ {
+		if ! (i % 2 == 1) {
+			continue
+		}
+		fmt.Printf("odd: %v\n", i)
+	}
+
+	fmt.Printf("=====================\n")
+
+	// nested loops
+	fmt.Printf("Nested loops\n")
+	for i := 0; i < 5; i++ {
+		fmt.Printf("Outside loop - iteration: %v\n", i + 1)
+		for j := 0; j < 5; j++ {
+			fmt.Printf("Nested loop - iteration: %v\n", j + 1)
+		}
+	}
+
+	fmt.Printf("=====================\n")
+
+	// iterate over slice - using range
+	fmt.Printf("Iterate over slice\n")
+	xi := []int{42, 42, 44, 45, 46, 47}
+	for index, value := range xi {
+		fmt.Printf("On index: %v is value of: %v\n", index, value)
+	}
+
+	fmt.Printf("=====================\n")
+
+	// iterate over map - using range
+	fmt.Printf("Iterate over map\n")
+	yi := map[string]int{
+		"Fifonż": 12,
+		"Alfons": 53,
+	}
+	for key, value := range yi {
+		fmt.Printf("On key: %v is number of: %v\n", key, value)
+	}
+
+	fmt.Printf("=====================\n")
+
+	// if statement; ok; statement
+	age := yi["Fifonż"]
+	fmt.Printf("The age of Fifonż is: %v\n", age)
+
+	fmt.Printf("Use if statement; ok; statement\n")
+	age2 := yi["Q"]
+	fmt.Printf("The age of Q is: %v\n", age2)
+
+	if _, ok := yi["Q"]; !ok {
+		fmt.Printf("There is no Q in your map\n")
+	}
+
+	fmt.Printf("=====================\n")
+
+	// if statement; statement
+	fmt.Printf("Use if statement; statement\n")
+	i = 0
+	for i < 5{
+		if x := rand.Intn(5); x == 3 {
+			fmt.Printf("x is %v", x)
+		}
+		i++
+	}
+
+	fmt.Printf("=====================\n")
+
+	// checking binary operators
+	fmt.Println(true && true) 
+	fmt.Println(true && false) 
+	fmt.Println(true || true) 
+	fmt.Println(true || false) 
+	fmt.Println(!true) 
 }
