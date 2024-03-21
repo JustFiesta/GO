@@ -42,6 +42,15 @@ go install
 
 -> this installs app binary in GOPATH/bin
 
+Checking the sha sum on downlaod file:
+
+```shell
+shasum --help
+shasum -a path/to/file
+```
+
+-> unchanged file shloud have always the same sum as the online version
+
 <hr>
 
 ### Useful links
