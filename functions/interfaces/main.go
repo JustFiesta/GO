@@ -24,7 +24,7 @@ func (c Circle) area() float64 {
 	return area
 }
 
-// this means "every type that has method area is shape"
+// this means "every type that has area method is shape type"
 type shape interface {
 	area() float64
 }
