@@ -13,3 +13,9 @@ Functions should be exported (starting with capital letter) to create documentat
 ```shell
 go doc
 ```
+
+View documentation in web via (godoc)[https://github.com/amalmadhu06/godoc-example]
+
+```shell
+godoc -http=:8080
+```
