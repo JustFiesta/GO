@@ -8,7 +8,7 @@ This folder contains initial excercises to get familiar with go syntax and workf
 
 Create go workspace (module):
 
-```go
+```shell
 go mod init someModuleName
 ```
 
@@ -16,19 +16,19 @@ go mod init someModuleName
 
 Run .go file:
 
-```go
+```shell
 go run filename
 ```
 
 Build exectuable
 
-```go
+```shell
 go build filename
 ```
 
 Build for certain OS:
 
-```go
+```shell
 GOOS=darvin go build
 GOOS=linux go build
 GOOS=windows go build
@@ -36,7 +36,7 @@ GOOS=windows go build
 
 Installing built app:
 
-```go
+```shell
 go install
 ```
 
