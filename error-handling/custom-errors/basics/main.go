@@ -11,7 +11,7 @@ type customErr struct {
 // creating method Error so person can implement Error type
 func (ce customErr) Error() string {
 
-	return "This is my custom error: " + ce.info
+	return ce.info
 }
 
 func foo(err error) {
